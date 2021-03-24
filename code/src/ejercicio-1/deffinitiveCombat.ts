@@ -2,13 +2,13 @@ import {Fighter} from "./fighter";
 
 export class DeffinitiveCombat <T extends Fighter>{
     /**
-     * Añade los dos Pokemon que participarán en el combate
-     * @param fighter1 Primer Pokemon
-     * @param fighter2 Segundo Pokemon
+     * Añade los dos luchadores que participarán en el combate
+     * @param fighter1 Primer luchador
+     * @param fighter2 Segundo luchador
      */
     constructor(private fighter1:T, private fighter2:T){}
     /**
-     * Calcula el daño que inflinge un Pokemon atacante a un Pokemon atacado
+     * Calcula el daño que inflinge un luchador atacante a un luchador atacado
      * @param player Atacante
      * @param enemy Atacado
      * @param att Ataque del atacante
@@ -25,80 +25,6 @@ export class DeffinitiveCombat <T extends Fighter>{
         }else{
             efectividad = 0.5;
         }
-        /*
-        if(player.toLowerCase() == "pokemon"){
-            if(enemy.toLowerCase() == "pokemon"){
-                efectividad = 0.5;
-            } else if(enemy.toLowerCase() == "marvel"){
-                efectividad = 2;
-            } else if(enemy.toLowerCase() == "star wars"){
-                efectividad = 0.5;
-            } else if(enemy.toLowerCase() == "warhammer"){
-                efectividad = 0.5;
-            } else if(enemy.toLowerCase() == "action heroes"){
-                efectividad = 1;
-            } else{
-                return -1;
-            }
-        }else if(player.toLowerCase() == "marvel"){
-            if(enemy.toLowerCase() == "pokemon"){
-                efectividad = 0.5;
-            } else if(enemy.toLowerCase() == "marvel"){
-                efectividad = 0.5;
-            } else if(enemy.toLowerCase() == "star wars"){
-                efectividad = 2;
-            } else if(enemy.toLowerCase() == "warhammer"){
-                efectividad = 1;
-            } else if(enemy.toLowerCase() == "action heroes"){
-                efectividad = 2;
-            }else{
-                return -1;
-            }
-        }else if(player.toLowerCase() == "star wars"){
-            if(enemy.toLowerCase() == "pokemon"){
-                efectividad = 2;
-            } else if(enemy.toLowerCase() == "marvel"){
-                efectividad = 0.5;
-            } else if(enemy.toLowerCase() == "star wars"){
-                efectividad = 0.5;
-            } else if(enemy.toLowerCase() == "warhammer"){
-                efectividad = 0.5;
-            } else if(enemy.toLowerCase() == "action heroes"){
-                efectividad = 1;
-            } else{
-                return -1;
-            }
-        }else if(player.toLowerCase() == "warhammer"){
-            if(enemy.toLowerCase() == "pokemon"){
-                efectividad = 2;
-            } else if(enemy.toLowerCase() == "marvel"){
-                efectividad = 1;
-            } else if(enemy.toLowerCase() == "star wars"){
-                efectividad = 2;
-            } else if(enemy.toLowerCase() == "warhammer"){
-                efectividad = 0.5;
-            } else if(enemy.toLowerCase() == "action heroes"){
-                efectividad = 0.5;
-            } else{
-                return -1;
-            }
-        }else if(player.toLowerCase() == "action heroes"){
-            if(enemy.toLowerCase() == "pokemon"){
-                efectividad = 1;
-            } else if(enemy.toLowerCase() == "marvel"){
-                efectividad = 1;
-            } else if(enemy.toLowerCase() == "star wars"){
-                efectividad = 2;
-            } else if(enemy.toLowerCase() == "warhammer"){
-                efectividad = 2;
-            } else if(enemy.toLowerCase() == "action heroes"){
-                efectividad = 0.5;
-            } else{
-                return -1;
-            }
-        }else{
-            return -1;
-        }*/
         return Number((50 * (att/defen)*efectividad).toFixed(0));
     }
     /**

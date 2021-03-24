@@ -1,3 +1,4 @@
+/*
 import {Velocidad} from "./ejercicio-2/velocidad";
 import {Masa} from "./ejercicio-2/masa";
 import {Tiempo} from "./ejercicio-2/tiempo";
@@ -22,3 +23,22 @@ console.log(vol.convert(["m3", 1], "l"));
 console.log(lng.convert(["km", 1], "m"));
 console.log(frz.convert(["N", 1], "dina"));
 console.log(tmp.convert(["C", 1], "K"));
+*/
+
+// import {Complex} from "./modif/Complex";
+import {EffectibleCollection} from "./modif/effectibleCollection";
+import {Rational} from "./modif/Rational";
+
+let c1 = new Rational(2, 2);
+let c2 = new Rational(3, 1);
+c1.print();
+c2.print();
+console.log("----");
+c1.add(c2).print();
+c1.substract(c2).print();
+c1.multiply(c2).print();
+c1.divide(c2).print();
+
+let col = new EffectibleCollection([c1, c2]);
+console.log(col.getNumberOfEffectibles());
+console.log(col.getEffectible(0).getString());
