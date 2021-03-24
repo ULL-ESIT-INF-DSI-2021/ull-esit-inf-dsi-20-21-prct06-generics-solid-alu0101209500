@@ -1,6 +1,32 @@
 {
     "entryPoints":[
-        "./src/**/*.ts"
+        "./src/ejercicio-1/ActionHeroesFighters.ts",
+        "./src/ejercicio-1/MarvelFighters.ts",
+        "./src/ejercicio-1/PokemonFighters.ts",
+        "./src/ejercicio-1/StarWarsFighters.ts",
+        "./src/ejercicio-1/WarhammerFighters.ts",
+        "./src/ejercicio-1/deffinitiveCombat.ts",
+        "./src/ejercicio-1/deffinitivePokedex.ts",
+        "./src/ejercicio-1/fighter.ts",
+        "./src/ejercicio-2/fuerza.ts",
+        "./src/ejercicio-2/isConvertible.ts",
+        "./src/ejercicio-2/longitud.ts",
+        "./src/ejercicio-2/masa.ts",
+        "./src/ejercicio-2/temperatura.ts",
+        "./src/ejercicio-2/tiempo.ts",
+        "./src/ejercicio-2/velocidad.ts",
+        "./src/ejercicio-2/volumen.ts",
+        "./src/ejercicio-3/basicStreamableCollection.ts",
+        "./src/ejercicio-3/documentaryStreamableCollection.ts",
+        "./src/ejercicio-3/serieStreamableCollection.ts",
+        "./src/ejercicio-3/movieStreamableCollection.ts",
+        "./src/ejercicio-3/streamable.ts",
+        "./src/ejercicio-3/printable.ts",
+        "./src/modif/Complex.ts",
+        "./src/modif/Rational.ts",
+        "./src/modif/effectible.ts",
+        "./src/modif/effectibleCollection.ts",
+        "./src/modif/printable.ts"
     ],
     "out": "./docs"
 }
