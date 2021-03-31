@@ -1,5 +1,8 @@
 import {BasicStreamableCollection} from "./basicStreamableCollection";
 
+/**
+ * Define un objeto película, con nombre de la película, duración, director y fecha de estreno
+ */
 export type movie = {
     nombre: string;
     duracion: number;
@@ -7,10 +10,22 @@ export type movie = {
     estreno: number;
 };
 
+/**
+ * Define una clase para instanciar colecciones de documentales
+ */
 export class MovieStreamableCollection extends BasicStreamableCollection<movie>{
+    /**
+     * Constructor de la clase
+     * @param col Array de elementos inicial
+     */
     constructor(col: movie[]){
         super(col);
     }
+    /**
+     * Busca un elemento en la colección
+     * @param criterio Criterio de búsqueda
+     * @param val Valor de búsqueda
+     */
     searchElement(criterio:string, val: string|number){
         switch (criterio.toLowerCase()) {
             case "nombre":
@@ -31,6 +46,9 @@ export class MovieStreamableCollection extends BasicStreamableCollection<movie>{
                 break;
         }
     }
+    /**
+     * Imprime por pantalla la información de los elementos de la colección.
+     */
     print(){
         this.collection.forEach((v, index) => (console.log(`ID: ${index}\nNombre: ${v.nombre}\nDirector: ${v.director}\nDuración: ${v.duracion}\nAño de estreno: ${v.estreno}\n`)));
     }
